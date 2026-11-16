@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BESTIE.EXE — Birthday Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="desktop">
+    <div class="desktop-glow"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-dot"></span> BESTIE.EXE <span class="brand-version" v.1 ></span></div>
+      <div class="topbar-center">A VERY IMPORTANT COMPUTER</div>
+      <div class="clock" id="clock">00:00</div>
+    </header>
+
+    <section class="desktop-content">
+      <div class="welcome">
+        <p class="eyebrow">✦ PERSONALIZED JUST FOR YOU ✦</p>
+        <h1>Welcome to<br><span>your pc styled website.</span></h1>
+        <p class="welcome-sub">A tiny corner of the internet made for you.</p>
+        <div class="hint">↳ double-click an icon to open it</div>
+      </div>
+
+      <nav class="icon-grid" aria-label="Desktop apps">
+        <button class="desktop-icon" data-window="birthday-window">
+          <span class="app-icon pink">♡</span><span>birthday.txt</span>
+        </button>
+        <button class="desktop-icon" data-window="letter-window">
+          <span class="app-icon paper">✉</span><span>open_this.msg</span>
+        </button>
+        <button class="desktop-icon" data-window="playlist-window">
+          <span class="app-icon blue">♫</span><span>our.song.mp3</span>
+        </button>
+        <button class="desktop-icon" data-window="gallery-window">
+          <span class="app-icon brown">✿</span><span>little_things</span>
+        </button>
+        <button class="desktop-icon" data-window="surprise-window">
+          <span class="app-icon yellow">✧</span><span>DO_NOT_CLICK.exe</span>
+        </button>
+      </nav>
+    </section>
+
+    <div class="desktop-sticker sticker-one">made with<br>♡ & pixels</div>
+    <div class="desktop-sticker sticker-two">YOU ARE<br>THE MOMENT ✦</div>
+
+    <footer class="taskbar">
+      <button class="start-button" id="start-button"><span>✿</span> start</button>
+      <div class="taskbar-note">♡ bestie operating system</div>
+      <div class="taskbar-status"><span class="status-light"></span> all systems happy</div>
+    </footer>
+
+    <div class="start-menu hidden" id="start-menu">
+      <div class="start-menu-title">BESTIE MENU <span>♡</span></div>
+      <p>Choose your adventure:</p>
+      <button data-window="birthday-window">♡ Birthday note</button>
+      <button data-window="letter-window">✉ A little letter</button>
+      <button data-window="playlist-window">♫ Music player</button>
+      <button data-window="surprise-window">✧ A surprise</button>
+      <div class="start-menu-foot">made especially for you</div>
+    </div>
+
+    <!-- APP WINDOWS -->
+    <section class="app-window hidden" id="birthday-window" style="--window-accent:#a64d68">
+      <div class="window-bar"><span>♡ birthday.txt</span><button class="close-window" aria-label="Close">×</button></div>
+      <div class="window-body birthday-paper">
+        <p class="paper-label">A VERY IMPORTANT ANNOUNCEMENT</p>
+        <h2>HAPPY BIRTHDAY,<br><span>YOU ICON.</span></h2>
+        <p>Belated to my og day 1 homie, i love u sm man.</p>
+        <div class="scribble">★ certified GOAT ★</div>
+        <p class="signoff">with lots of love, <b>the goat bff</b> ♡</p>
+      </div>
+    </section>
+
+    <section class="app-window hidden" id="letter-window" style="--window-accent:#b18a72">
+      <div class="window-bar"><span>✉ open_this.msg</span><button class="close-window" aria-label="Close">×</button></div>
+      <div class="window-body letter-body">
+        <div class="letter-stamp">FOR<br>YOU ♡</div>
+        <p class="eyebrow">A NOTE FROM YOUR PERSON</p>
+        <h2>Hi mamo.</h2>
+        <p>A little reminder that you are loved, especially by me. You're literally my platonic soulmate, man.</p>
+        <p>I'm rooting for you in every version of your life. Don't ever stop being the perverted person you are lol. </p>
+        <p class="signoff">P.S. You deserve the biggest slice of cake bcs we're big backs.</p>
+      </div>
+    </section>
+
+    <section class="app-window hidden" id="playlist-window" style="--window-accent:#6588a5">
+      <div class="window-bar"><span>♫ our song.mp3</span><button class="close-window" aria-label="Close">×</button></div>
+      <div class="window-body music-body">
+        <div class="record"><div class="record-center">♡</div></div>
+        <p class="eyebrow">NOW PLAYING (IN YOUR HONOR)</p>
+        <h2>our soundtrack</h2>
+        <p class="music-caption">this song reminds me of us.</p>
+        <audio id="birthday-audio" src="assets/song.mp3" preload="none"></audio>
+        <div class="player-controls">
+          <button id="play-button" class="play-button">▶ Play</button>
+          <span id="song-status">ready when you are ♡</span>
+        </div>
+        <div class="music-progress"><span id="progress"></span></div>
+      </div>
+    </section>
+
+    <section class="app-window hidden" id="gallery-window" style="--window-accent:#98795e">
+      <div class="window-bar"><span>✿ little things</span><button class="close-window" aria-label="Close">×</button></div>
+      <div class="window-body gallery-body">
+        <p class="eyebrow">A COLLECTION OF GOOD THINGS</p>
+        <h2>little things that reminds me of you.</h2>
+        <div class="memory-grid">
+          <div class="memory-card"><span>☼</span><b>roblox</b><small>definitely this.</small></div>
+          <div class="memory-card"><span>♫</span><b>enhypen</b><small>especially jay.</small></div>
+          <div class="memory-card"><span>☁</span><b>late nights</b><small>you would text at the most random times at night</small></div>
+          <div class="memory-card"><span>✧</span><b>food</b><small>more food to eat with u.</small></div>
+        </div>
+        <p class="gallery-note">You can replace these cards with your own photos and memories later!</p>
+      </div>
+    </section>
+
+    <section class="app-window hidden" id="surprise-window" style="--window-accent:#b69b55">
+      <div class="window-bar"><span>✧ DO_NOT_CLICK.exe</span><button class="close-window" aria-label="Close">×</button></div>
+      <div class="window-body surprise-body">
+        <div class="surprise-star">✦</div>
+        <p class="eyebrow">SECRET FILE UNLOCKED</p>
+        <h2>One more thing...</h2>
+        <p>May you always have reasons to laugh, people who show up for you, and the courage to chase the things that make you happy.</p>
+        <button class="reveal-button" id="reveal-button">click for a tiny reminder</button>
+        <p class="hidden-reveal" id="hidden-reveal">YOU ARE SUPER LOVED AND APPRECIATED BY ME♡</p>
+      </div>
+    </section>
+
+    <div class="toast" id="toast">♡ belated happy birthday !</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
